@@ -5,3 +5,13 @@ spring:
   application:
     name: mongoTest
 
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/querytest?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8&useSSL=false&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    format-sql: true

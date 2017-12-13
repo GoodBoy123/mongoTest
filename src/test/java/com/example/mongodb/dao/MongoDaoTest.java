@@ -1,3 +1,4 @@
+
 package com.example.mongodb.dao;
 
 import com.example.mongodb.MongodbApplication;
@@ -56,7 +57,7 @@ public class MongoDaoTest {
     //通过用户userId查找
     @Test
     public void getUser() throws Exception {
-        List<UserDto> list = mongoDao.getUser(1L);
+        List<UserDto> list = mongoDao.getUser(12L);
         System.out.println("size:" + list.size());
         for(UserDto userDto : list)
         {
